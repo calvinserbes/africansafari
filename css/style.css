@@ -1,0 +1,15 @@
+.topinfo {
+  display: flex;
+  justify-content: center;
+  background: #D38407;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+.topinfo p {
+  padding: 20px;
+}
+.topinfo .icone-topinfo {
+  border: 1px solid;
+  padding: 15px;
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */

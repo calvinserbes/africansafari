@@ -2,7 +2,41 @@ $principalOrange: #F39200;
 $topInfo: #D38407;
 
 .topinfo{
+    height: 60px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: $topInfo;
     color: #fff;
     font-family: 'Roboto', sans-serif;
+        i{
+            font-size: 27px;
+            padding: 0 10px;
+        }
+        p{
+            font-size: 1em;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            display: inline-block;
+        }
 }
+
+
+.topinfo a::after{
+    content: "";
+    display: block;
+    position: relative;
+    width: 0%;
+    height: .1em;
+    background: #00bebe;
+    transition: width 0.5s ease-in-out;
+}
+.topinfo :hover::after{
+    width: 100%;
+}
+
