@@ -39,43 +39,93 @@
 
 .background {
   background: url("img/header-background.png") center;
-  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
   height: 70vh;
 }
 
-.navbar-secondary {
-  display: flex;
-  justify-content: end;
+@media screen and (min-width: 992px) {
+  .navbar-secondary {
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+  }
+  .navbar-secondary div {
+    font-weight: 500;
+    display: flex;
+    margin: 0 5px;
+    padding: 3px 10px 3px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .navbar-secondary .search-secondary {
+    align-items: center;
+    background: #146560;
+  }
+  .navbar-secondary .search-secondary :hover {
+    cursor: pointer;
+  }
+  .navbar-secondary .meteo {
+    align-items: center;
+    background: #fff;
+    color: #146560;
+  }
+  .navbar-secondary .meteo img {
+    margin-left: 5px;
+  }
+  .navbar-secondary .opening-information {
+    align-items: center;
+    background: #85B9B5;
+    color: #146560;
+  }
+  .navbar-secondary .account-profile {
+    align-items: center;
+    background: #fff;
+  }
 }
-.navbar-secondary div {
-  display: flex;
-  margin: 0 5px;
-  padding: 5px 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-.navbar-secondary .search-secondary {
-  align-items: center;
-  background: #146560;
-}
-.navbar-secondary .meteo {
-  align-items: center;
-  background: #fff;
-  color: #146560;
-}
-.navbar-secondary .meteo img {
-  margin-left: 5px;
-}
-.navbar-secondary .opening-information {
-  align-items: center;
-  background: #85B9B5;
-  color: #146560;
-}
-.navbar-secondary .account-profile {
-  align-items: center;
-  background: #fff;
+@media screen and (max-width: 992px) {
+  .navbar-secondary {
+    display: none;
+    justify-content: end;
+    margin-right: 50px;
+  }
+  .navbar-secondary div {
+    font-weight: 500;
+    display: flex;
+    margin: 0 5px;
+    padding: 3px 10px 3px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .navbar-secondary .search-secondary {
+    align-items: center;
+    background: #146560;
+  }
+  .navbar-secondary .search-secondary :hover {
+    cursor: pointer;
+  }
+  .navbar-secondary .meteo {
+    align-items: center;
+    background: #fff;
+    color: #146560;
+  }
+  .navbar-secondary .meteo img {
+    margin-left: 5px;
+  }
+  .navbar-secondary .opening-information {
+    align-items: center;
+    background: #85B9B5;
+    color: #146560;
+  }
+  .navbar-secondary .account-profile {
+    align-items: center;
+    background: #fff;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
