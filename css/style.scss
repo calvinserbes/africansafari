@@ -1,5 +1,8 @@
 $principalOrange: #F39200;
+$colorSecondary: #146560;
+$greenSecondary: #85B9B5;
 $topInfo: #D38407;
+
 
 // top info //
 
@@ -43,3 +46,44 @@ $topInfo: #D38407;
 }
 
 // =================================== //
+
+.background{
+    background: url("img/header-background.png") center;
+    width: 100%;
+    height: 70vh;
+}
+
+.navbar-secondary{
+    display: flex;
+    justify-content: end;
+    div{
+        display: flex;
+        margin: 0 5px;
+        padding: 5px 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }   
+        .search-secondary{
+            align-items: center;
+            background: $colorSecondary;
+        }
+        .meteo{
+            align-items: center;
+            background: #fff;
+            color: $colorSecondary;
+            img{
+                margin-left: 5px;
+            }
+        }
+        .opening-information{
+            align-items: center;
+            background: $greenSecondary;
+            color: $colorSecondary;
+        }
+        .account-profile{
+            align-items: center;
+            background: #fff;
+        }
+}
