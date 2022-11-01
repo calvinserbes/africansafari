@@ -137,6 +137,7 @@
   display: flex;
 }
 .principal-nav .navbar ul li {
+  list-style-type: none;
   padding: 35px 0 0 20px;
 }
 .principal-nav .navbar ul a {
@@ -147,13 +148,18 @@
   text-decoration: none;
 }
 
+.logo {
+  margin-right: -15px;
+}
+
+.logo img {
+  width: 200px;
+}
+
 .billeterie {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: #F39200;
   border-radius: 10px;
-  margin-left: 35px;
+  margin-left: 30px;
 }
 .billeterie .billeterie-element {
   padding: 10px;
@@ -161,8 +167,8 @@
 .billeterie a {
   color: white;
   font-size: 17px;
-  font-weight: 500;
   letter-spacing: 0.1em;
+  font-weight: 500;
   text-decoration: none;
   padding: 10px 8px;
 }
@@ -170,6 +176,31 @@
 .billeterie:hover {
   background: rgba(243, 146, 0, 0.8705882353);
   transition: 0.8s;
+}
+
+@media screen and (max-width: 1080px) {
+  .principal-nav {
+    margin: 0 3px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .principal-nav {
+    display: flex;
+    justify-content: center;
+  }
+  .principal-nav .navbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .logo img {
+    margin-top: 8px;
+    width: 250px;
+  }
+}
+.halloween {
+  color: #fff;
+  background: #000;
 }
 
 /*# sourceMappingURL=style.css.map */

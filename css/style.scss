@@ -152,6 +152,7 @@ $topInfo: #D38407;
             ul{
                 display: flex;
                 li{
+                   list-style-type: none;
                    padding: 35px 0 0 20px;
                 }
                 a{
@@ -165,21 +166,26 @@ $topInfo: #D38407;
         }
 }
 
+.logo{
+    margin-right: -15px;
+}
+
+.logo img{
+    width: 200px;
+}
+
 .billeterie{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: $principalOrange;
     border-radius: 10px;
-    margin-left: 35px;
+    margin-left: 30px;
     .billeterie-element{
         padding: 10px;
     }
     a{
         color: white;
         font-size: 17px;
-        font-weight: 500;
         letter-spacing: 0.1em;
+        font-weight: 500;
         text-decoration: none;
         padding: 10px 8px;
     }
@@ -190,5 +196,32 @@ $topInfo: #D38407;
     transition: 0.8s;
 }
 
+@media screen and (max-width: 1080px){
+    .principal-nav{
+        margin: 0 3px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .principal-nav{
+        display: flex;
+        justify-content: center;
+        .navbar{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .logo img{
+        margin-top: 8px;
+        width: 250px;
+    }
+}
+
 // ====== article header ================ //
 
+.halloween{
+    color: #fff;
+    background: #000;
+}
